@@ -1,7 +1,7 @@
 if has('multi_byte')
-    let defaults = {'placeholder': '⋯',   'line': '▤', 'multiplication': '×' }
+    let defaults = {'placeholder': '⋯',   'line': '', 'multiplication': '×' }
 else
-    let defaults = {'placeholder': '...', 'line': 'L', 'multiplication': '*' }
+    let defaults = {'placeholder': '...', 'line': '', 'multiplication': '*' }
 endif
 
 let g:FoldText_placeholder    = get(g:, 'FoldText_placeholder',    defaults['placeholder'])
