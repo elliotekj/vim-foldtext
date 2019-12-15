@@ -51,7 +51,7 @@ function! FoldText()
 
     let ending = ""
     if g:FoldText_info
-        let foldSize = 1 + v:foldend - v:foldstart
+        let foldSize = v:foldend - v:foldstart - 1
         let ending = printf("%s%s%s", g:FoldText_line, g:FoldText_multiplication, foldSize)
         let ending = printf("%-11s", ending)
 
